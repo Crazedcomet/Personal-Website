@@ -15,6 +15,11 @@ iframe {
     user-select: none;
 }
 
+.projects {
+    margin-top: -2px;
+}
+
+
 h1 {
     font-family: 'Playfair Display';
     font-size: 4rem;
@@ -61,10 +66,12 @@ nav a {
 }
 
 .progress-container {
-    width: 60%;
+    width: 110%;
     background-color: #f0f0f0; /* Gray background */
     border-radius: 5px;
     overflow: hidden; /* Hide overflowing content */
+    margin: 0;
+    padding: 0px;
 }
 
 /* Style the progress bar itself */
@@ -78,9 +85,11 @@ nav a {
 
 /* Optional: Add more styles later (shadows, , etc.) */
 
+.projects {
+    background-color: #d7d5d5;
+}
 
-
-@media (max-width: 768px) {
+@media (max-width: 70px) {
     .progress-bar {
         font-size: 12px;
     }
@@ -110,6 +119,13 @@ h3 {
     text-align: center;
     margin-top: 2em;
     font-size: 30px;
+}
+
+h4 {
+    font-family: 'Playfair Display';
+    text-align: left;
+    margin-top: 1em;
+    font-size: 25px;
 }
 
 
