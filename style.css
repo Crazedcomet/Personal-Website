@@ -1,16 +1,63 @@
-/* Reset default margin and padding */
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #111; /* Dark background color */
-    color: #fff; /* Light text color */
-    line-height: 1.6;
+iframe {
+    width: 100%;
+    margin-right: auto;
+    margin-top:70px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    user-select: none;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-size: 4rem;
+    margin-top: 1em;
+    margin-bottom: .3em;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 300;
     margin: 0;
+}
+
+h1,p {
+    text-align: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+header {
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 20px;
+    text-align: right;
+    position: sticky;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+}
+
+nav ul img {
+    padding-right: 10em;
+}
+
+nav li {
+    display: inline-block;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #666; /* Medium grey link color */
+
 }
 
 .progress-container {
@@ -37,4 +84,127 @@ body {
     .progress-bar {
         font-size: 12px;
     }
+}
+
+#l {
+    position: absolute;
+    left: 1em;
+}
+
+#r {
+    display: flex;
+    position: absolute;
+    right: 1em;
+    gap: 2em;
+}
+
+h2 {
+    font-family: 'Comic Sans';
+    text-align: center;
+    margin-top: 20em;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    text-align: center;
+    margin-top: 2em;
+    font-size: 30px;
+}
+
+
+#compsci {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: fit-content;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+#description-dumb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-arrow {
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: fit-content;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+.scroll-arrow img {
+    width: 50px; 
+}
+
+.beginners {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.beginner-button {
+    background-color: #339DFF;
+    color: white;
+    width: 170px;
+    border-radius: 50px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.beginner-button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #339DFF;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.svg {
+    margin-left: auto;
+}
+
+footer {
+    padding-top: 1em;
+    background-color: #f5f5f5;
+}
+
+body {
+    opacity: 0; /* Start as invisible */
+    transform: translateY(20px); /* Start position slightly below */
+    animation: fadeInUp 2s forwards; /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+        transform: translateY(20px); /* Slightly below the final position */
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+        transform: translateY(0); /* Final position */
+    }
+
+}
+
+.gray-text {
+    color: #666;
 }
