@@ -221,6 +221,22 @@ body {
 
 }
 
+.github-logo {
+    height: auto;
+    transition: transform 0.3s ease;
+    height: 100%; /* Ensure the body takes up the full height */
+    margin: 0;    /* Remove default margin */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    width: 100px;
+}
+.github-logo:hover {
+    transform: scale(1.1);
+ 
+
+}
+
 .gray-text {
     color: #666;
 }
