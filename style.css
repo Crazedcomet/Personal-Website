@@ -203,16 +203,43 @@ h5 {
     margin-left: auto;
 }
 
-footer {
-    padding-top: 1em;
-    background-color: #f5f5f5;
+.arduino {
+    background-color: #fff
+}
+
+.contact {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.question {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.question p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    margin: 5px 0;
+    padding: 10px;
+    width: 30%;
+    align: center;
 }
 
 .engineering {
     background-color: #d7d5d5;
 }
 
-.arduino {
+.arduinoimg {
     width: 300px;
     height: 200px;
 
