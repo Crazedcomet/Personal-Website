@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="fixed-header" id="fixed-header">
         
         <nav>
             
@@ -16,21 +16,21 @@
                     <img src="#" width="40" id="logo" >
                 </div>
                 <div id="r">
-                    <li><a href="home">Home</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#compsci">Computer Science</a></li>
                     <li><a href="#engineering">Engineering</a></li>
-                    <li><a href="other">Other</a></li>
-                    <li><a href="achivements">Achivements</a></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><a href="#other">Other</a></li>
+                    <li><a href="#achivements">Achivements</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </div>
             </ul>
         </nav>
     </header>
 
 </head>
-<section>
+<section class="home" id="home">
     <h1>Hi, I'm Kahan Shah</h1>
-    <p>You have arrived to my personal website!</p>
+    <p>I am a Grade 10 student at White Oaks Secondary School.</p>
 </section>
 
 <section id="features" class="features">
@@ -163,35 +163,61 @@
     </div>
 </section>
 
+<section class="achivements" id="achivements">
+    <h5>Achivements & Awards</h5>
+    <div>
+        <h3>Ontario Principals' Award for Student Leadership</h3>
+        <p>I won this award at the end of my Grade 8 year!</p>
+    </div>
+</section>
+
+<section class="other" id="other">
+    <h5>My other endeavours!</h5>
+    <div>
+        <h4>DECA & Model UN</h4>
+        <p>I am an active memeber in my school's MUN and DECA programs. In Model UN, 
+           I am the club's Junior Executive of the 24/25 school year</p>
+           <img src="https://www.bcbe.org/cms/lib/AL01901374/Centricity/Domain/8056/Model-UN-Goetheschule-Essen.png">
+    </div>
+</section>
+
 <section class="contact" id="contact">
     <h5>Contact</h5>
+    <p>Feel free to reach out to me for business or personal inquiries!</p>
+    <br>
     <div class="contact">
         <form action="#" method="post">
         <input type="text" name="name"
     placeholder="Your Name (First & Last)" required>
         <input type="email" name="email" 
     placeholder="Your Email" required>
-    </div>
-    <div class="question">
-        <p>What is the purpose of this inquiry?</p>
-        <br>
-<label>
-        <input type="radio" name="purpose"
-    value="personal"> personal
-    <input type="radio" name="purpose"
-value="business"> business 
-    <input type="radio" name="purpose"
-value="other"> other 
-</label>
-</div>
-<div class="contact">
         <textarea name="message"
     placeholder="Your Message" required></textarea>
         <button type="submit">Send</button>
     </div>
     </form>
 </section>
+</body>
 
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h5>Kahan Shah</h5>
+          </div>
+          <div class="footer-section">
+            <h4>Get to know me</h4>
+            <a href="#">Email</a>
+            <a href="https://github.com/Crazedcomet">Github</a>
+            <a href="#">Instagram</a>
+          </div>
+          <div class="footer-section">
+            <p>Kahan Shah: Student, Developper and Engineer</p>
+          </div>
+        </div>
+      
+</footer>
+
+</html>
 
    
 
